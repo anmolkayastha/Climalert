@@ -96,7 +96,14 @@ a{
 .navbar-container
 {
     color: #fff;
+    display: grid;
+    grid-template-columns: 6fr 2fr 6fr;
     background-color: var(--main-green-color);
+    align-items: center;
+}
+
+.navbar-container h1{
+    grid-column: 1 / span6;
 }
 
 .logo
@@ -197,9 +204,23 @@ a{
 }
 
 
+/* Download */
+#download
+{
+    align-self: center;
+}
+
+#download a{
+    color: #000;
+}
+
+#download a:hover{
+    color: var(--main-green-color);
+}
+
 /* Tips */
 
-.tip-container
+/* .tip-container
 {
     margin-top: 2rem;
     display: flex;
@@ -215,7 +236,7 @@ a{
 
 .tip-container input{
     padding: 1.2rem 1rem 1.2rem 1.0rem;
-}
+} */
 
 
 /* Footer */
